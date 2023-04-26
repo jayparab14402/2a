@@ -1,0 +1,12 @@
+Exploring and Managing Raster data: Adding raster layers, raster styling and analysis
+
+1.Add Raster layer.
+2.Browse a file “glds90ag60.asc” and click on Add button, similarly add “glds00ag60.asc” file and click on Add button.
+3.On the next screen set CRS as EPSG:4326.
+4.Right click on “glds90ag60” layer and select “properties”.
+5.Select “Symbology”. In “Render type” select “Singleband pseudocolor”. Set 0 in min textbox and 240 in max textbox. In “Interpolation” select “Linear”. In “color” menu select “Spectral”. Click on Apply and then Ok buttons.
+6.Go to Raster  Raster Calculator...
+7.Click on … button, menu will appear select the path where you want to save output. Enter name for output file and click on “Save”. Double click on "glds00ag60@1" then click on “-” and then double click on "glds90ag60@1".
+8.Click on “OK”. It will create new layer. Select that layer “Right click” on it and select properties. In properties select symbology tab.
+9.In “Render type” select “Singleband pseudocolor”. Set -20000 in min textbox and 6000 in max textbox. In “Interpolation” select “Discrete”. In “color” menu select “Spectral”. Remove all classification and add as below using + and – buttons. Add 4 colors with (-20000,-10,10,6000) value 
+10,Explore an area of your choice and check the raster band value using to verify the classification rule. The green pixel shows negative changes and yellow shows positive changes.
